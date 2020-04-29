@@ -87,3 +87,12 @@ func Err30015() OKError {
 		Message:      "Invalid OK_ACCESS_PASSPHRASE",
 	}
 }
+
+func Err30031(t string) OKError {
+	return OKError{
+		ErrorMessage: t + " is an invalid token",
+		Code:         30031,
+		ErrorCode:    "30031",
+		Message:      t + " is an invalid token",
+	}
+}
