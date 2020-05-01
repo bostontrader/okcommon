@@ -6,3 +6,11 @@ type WithdrawalFee struct {
 	MinFee     string `json:"min_fee"`
 	MaxFee     string `json:"max_fee"`
 }
+
+//{"balance":"1.00000000","available":"1.00000000","currency":"BSV","hold":"0.00000000"}
+type WalletEntry struct {
+	Available  string `json:"available"`
+	Balance    string `json:"balance"`
+	CurrencyID string `json:"currency"`
+	Hold       string `json:"hold"`
+}
