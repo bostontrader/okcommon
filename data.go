@@ -2,8 +2,8 @@ package utils
 
 // {"name":"0x","currency":"ZRX","can_withdraw":"1","can_deposit":"1","min_withdrawal":"1.0000000000000000"}
 type CurrenciesEntry struct {
-	CanDeposit    bool   `json:"can_deposit"`
-	CanWithdraw   bool   `json:"can_withdraw"`
+	CanDeposit    string `json:"can_deposit"`
+	CanWithdraw   string `json:"can_withdraw"`
 	CurrencyID    string `json:"currency"`
 	Name          string `json:"name"`
 	MinWithdrawal string `json:"min_withdrawal"`
