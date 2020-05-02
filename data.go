@@ -15,7 +15,7 @@ type DepositAddress struct {
 	PaymentID  string `json:"payment_id"`
 	Memo       string `json:"memo"`
 	CurrencyID string `json:"currency"`
-	To         string `json:"to"`
+	To         int    `json:"to"`
 }
 
 //{"balance":"1.00000000","available":"1.00000000","currency":"BSV","hold":"0.00000000"}
