@@ -9,6 +9,15 @@ type CurrenciesEntry struct {
 	MinWithdrawal string `json:"min_withdrawal"`
 }
 
+type DepositAddress struct {
+	Address    string `json:"address"`
+	Tag        string `json:"tag"`
+	PaymentID  string `json:"payment_id"`
+	Memo       string `json:"memo"`
+	CurrencyID string `json:"currency"`
+	To         string `json:"to"`
+}
+
 //{"balance":"1.00000000","available":"1.00000000","currency":"BSV","hold":"0.00000000"}
 type WalletEntry struct {
 	Available  string `json:"available"`

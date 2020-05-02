@@ -88,6 +88,15 @@ func Err30015() OKError {
 	}
 }
 
+func Err30023() OKError {
+	return OKError{
+		ErrorMessage: "currency cannot be blank",
+		Code:         30023,
+		ErrorCode:    "30023",
+		Message:      "currency cannot be blank",
+	}
+}
+
 func Err30031(t string) OKError {
 	return OKError{
 		ErrorMessage: t + " is an invalid token",
