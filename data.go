@@ -18,6 +18,17 @@ type DepositAddress struct {
 	To         int    `json:"to"`
 }
 
+type DepositHistory struct {
+	Amount     string `json:"amount"`
+	TXID       string `json:"txid"`
+	CurrencyID string `json:"currency"`
+	From       string `json:"from"`
+	To         string `json:"to"`
+	DepositID  string `json:"deposit_id"`
+	Timestamp  string `json:"timestamp"`
+	Status     string `json:"status"`
+}
+
 //{"balance":"1.00000000","available":"1.00000000","currency":"BSV","hold":"0.00000000"}
 type WalletEntry struct {
 	Available  string `json:"available"`
