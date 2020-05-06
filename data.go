@@ -24,7 +24,7 @@ type DepositHistory struct {
 	CurrencyID string `json:"currency"`
 	From       string `json:"from"`
 	To         string `json:"to"`
-	DepositID  string `json:"deposit_id"`
+	DepositID  int    `json:"deposit_id"`
 	Timestamp  string `json:"timestamp"`
 	Status     string `json:"status"`
 }
