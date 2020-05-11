@@ -88,12 +88,12 @@ func Err30015() OKError {
 	}
 }
 
-func Err30023() OKError {
+func Err30023(t string) OKError {
 	return OKError{
-		ErrorMessage: "currency cannot be blank",
+		ErrorMessage: t,
 		Code:         30023,
 		ErrorCode:    "30023",
-		Message:      "currency cannot be blank",
+		Message:      t,
 	}
 }
 
