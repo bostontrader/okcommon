@@ -1,5 +1,15 @@
 package utils
 
+type AccountsEntry struct {
+	AccountID  string `json:"id"`
+	Available  string `json:"available"`
+	Balance    string `json:"balance"`
+	CurrencyID string `json:"currency"`
+	Frozen     string `json:"frozen"`
+	Hold       string `json:"hold"`
+	Holds      string `json:"holds"`
+}
+
 // {"name":"0x","currency":"ZRX","can_withdraw":"1","can_deposit":"1","min_withdrawal":"1.0000000000000000"}
 type CurrenciesEntry struct {
 	CanDeposit    string `json:"can_deposit"`
