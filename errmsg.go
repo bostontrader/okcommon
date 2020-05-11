@@ -114,3 +114,12 @@ func Err30032() OKError {
 		Message:      "The currency pair does not exist",
 	}
 }
+
+func Err33007() OKError {
+	return OKError{
+		ErrorMessage: "There is no such status",
+		Code:         33007,
+		ErrorCode:    "33007",
+		Message:      "There is no such status",
+	}
+}
