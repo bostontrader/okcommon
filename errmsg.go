@@ -105,3 +105,12 @@ func Err30031(t string) OKError {
 		Message:      t + " is an invalid token",
 	}
 }
+
+func Err30032() OKError {
+	return OKError{
+		ErrorMessage: "The currency pair does not exist",
+		Code:         30032,
+		ErrorCode:    "30032",
+		Message:      "The currency pair does not exist",
+	}
+}
