@@ -97,6 +97,15 @@ func Err30023(t string) OKError {
 	}
 }
 
+func Err30025(t string) OKError {
+	return OKError{
+		ErrorMessage: t,
+		Code:         30025,
+		ErrorCode:    "30025",
+		Message:      t,
+	}
+}
+
 func Err30031(t string) OKError {
 	return OKError{
 		ErrorMessage: t + " is an invalid token",
