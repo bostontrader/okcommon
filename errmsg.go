@@ -61,8 +61,8 @@ func Err30006() OKError {
 	}
 }
 
-func Err30007() utils.OKError {
-	return utils.OKError{
+func Err30007() OKError {
+	return OKError{
 		ErrorMessage: "Invalid Content_Type, please use the application/json format",
 		Code:         30007,
 		ErrorCode:    "30007",
@@ -79,8 +79,8 @@ func Err30008() OKError {
 	}
 }
 
-func Err30012() utils.OKError {
-	return utils.OKError{
+func Err30012() OKError {
+	return OKError{
 		ErrorMessage: "Invalid Authority",
 		Code:         30012,
 		ErrorCode:    "30012",
