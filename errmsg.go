@@ -79,6 +79,15 @@ func Err30008() OKError {
 	}
 }
 
+func Err30012() utils.OKError {
+	return utils.OKError{
+		ErrorMessage: "Invalid Authority",
+		Code:         30012,
+		ErrorCode:    "30012",
+		Message:      "Invalid Authority",
+	}
+}
+
 func Err30013() OKError {
 	return OKError{
 		ErrorMessage: "Invalid Sign",
