@@ -1,10 +1,24 @@
 package utils
 
+// Ordinary 4xx error messages.
 type OKError struct {
 	ErrorMessage string `json:"error_message"`
 	Code         int    `json:"code"`
 	ErrorCode    string `json:"error_code"`
 	Message      string `json:"message"`
+}
+
+// 5xx error messages
+type OK500Error struct {
+	ErrorMessage string `json:"error_message"`
+	Message      string `json:"message"`
+}
+
+func Err500() OK500Error {
+	return OK500Error{
+		ErrorMessage: "System error",
+		Message:      "System error",
+	}
 }
 
 func Err30001() OKError {
@@ -112,6 +126,15 @@ func Err30023(t string) OKError {
 		Code:         30023,
 		ErrorCode:    "30023",
 		Message:      t,
+	}
+}
+
+func Err30024() OKError {
+	return OKError{
+		ErrorMessage: "Invalid type type",
+		Code:         30024,
+		ErrorCode:    "30024",
+		Message:      "Invalid type type",
 	}
 }
 
