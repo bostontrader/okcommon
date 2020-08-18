@@ -10,7 +10,6 @@ type AccountsEntry struct {
 	Holds      string `json:"holds"`
 }
 
-// {"name":"0x","currency":"ZRX","can_withdraw":"1","can_deposit":"1","min_withdrawal":"1.0000000000000000"}
 type CurrenciesEntry struct {
 	CanDeposit    string `json:"can_deposit"`
 	CanWithdraw   string `json:"can_withdraw"`
@@ -39,7 +38,16 @@ type DepositHistory struct {
 	Status     string `json:"status"`
 }
 
-//{"balance":"1.00000000","available":"1.00000000","currency":"BSV","hold":"0.00000000"}
+type LedgerEntry struct {
+    Amount    string
+    Balance   string
+    Currency  string
+    Fee       string
+    LedgerID  string `json:"ledger_id"`
+    Typename  string
+    Timestamp string `json:"timestamp"`
+}
+
 type WalletEntry struct {
 	Available  string `json:"available"`
 	Balance    string `json:"balance"`
@@ -47,7 +55,6 @@ type WalletEntry struct {
 	Hold       string `json:"hold"`
 }
 
-//{"min_fee":"0.00040000","currency":"BTC","max_fee":"0.01000000"}
 type WithdrawalFee struct {
 	CurrencyID string `json:"currency"`
 	MinFee     string `json:"min_fee"`
