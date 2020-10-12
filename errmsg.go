@@ -129,12 +129,12 @@ func Err30023(t string) OKError {
 	}
 }
 
-func Err30024() OKError {
+func Err30024(t string) OKError {
 	return OKError{
-		ErrorMessage: "Invalid type type",
+		ErrorMessage: t,
 		Code:         30024,
 		ErrorCode:    "30024",
-		Message:      "Invalid type type",
+		Message:      t,
 	}
 }
 
