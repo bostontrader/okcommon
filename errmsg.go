@@ -173,3 +173,12 @@ func Err33007() OKError {
 		Message:      "There is no such status",
 	}
 }
+
+func Err34008() OKError {
+	return OKError{
+		ErrorMessage: "Insufficient funds",
+		Code:         34008,
+		ErrorCode:    "34008",
+		Message:      "Insufficient funds",
+	}
+}
