@@ -9,7 +9,9 @@ import (
 type Credentials struct {
 	Key        string `json:"api_key"`
 	SecretKey  string `json:"api_secret_key"`
-	Passphrase string `json:"passphrase"`
+	Passphrase string
+	Type       string // read, read-trade, read-withdraw
+	UserID     string `json:"user_id"`
 }
 
 /*
