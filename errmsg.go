@@ -174,6 +174,15 @@ func Err33007() OKError {
 	}
 }
 
+func Err34002() OKError {
+	return OKError{
+		ErrorMessage: "Withdrawal address does not exist",
+		Code:         34002,
+		ErrorCode:    "34002",
+		Message:      "Withdrawal address does not exist",
+	}
+}
+
 func Err34008() OKError {
 	return OKError{
 		ErrorMessage: "Insufficient funds",
