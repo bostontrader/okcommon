@@ -33,19 +33,19 @@ type DepositHistory struct {
 	CurrencyID string `json:"currency"`
 	From       string `json:"from"`
 	To         string `json:"to"`
-	DepositID  int    `json:"deposit_id"`
+	DepositID  uint32 `json:"deposit_id"`
 	Timestamp  string `json:"timestamp"`
 	Status     string `json:"status"`
 }
 
 type LedgerEntry struct {
-    Amount    string
-    Balance   string
-    Currency  string
-    Fee       string
-    LedgerID  string `json:"ledger_id"`
-    Typename  string
-    Timestamp string `json:"timestamp"`
+	Amount    string
+	Balance   string
+	Currency  string
+	Fee       string
+	LedgerID  string `json:"ledger_id"`
+	Typename  string
+	Timestamp string `json:"timestamp"`
 }
 
 type WalletEntry struct {
